@@ -50,9 +50,9 @@ reCaptcha:
   siteKey                :
   secret                 :
 atom_feed:
-  path                   : ./feed.xml
-search                   : true # true, false (default)
-search_full_content      : true # true, false (default)
+  path                   : 
+search                   : false # true, false (default)
+search_full_content      : false # true, false (default)
 search_provider          : lunr # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
