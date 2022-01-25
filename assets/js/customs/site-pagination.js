@@ -10,7 +10,7 @@ if($sitePaginator.length > 0) {
   //   style="display:block"
   //   data-ad-format="fluid"
   //   data-ad-layout-key="-gs+5+15-58+68"
-  //   data-ad-client="ca-pub-9480069633849139"
+  //   data-ad-client="ca-pub-7333382571505351"
   //   data-ad-slot="9523124851"></ins>
   // <script>
   //   (adsbygoogle = window.adsbygoogle || []).push({});
