@@ -4,7 +4,7 @@
 
 /* Share On */
 function scrapKakao() {
-    var imgUrl1 = 'https://seungwubaek.github.io/android-chrome-192x192.png';
+    var imgUrl1 = 'https://codingstorylove.github.io/android-chrome-192x192.png';
     var imgUrl2 = '';
     var imgUrlRest = '';
     var $imgs = $('.page__content img');
@@ -21,7 +21,7 @@ function scrapKakao() {
 
     Kakao.Link.sendScrap({
         requestUrl: location.origin + location.pathname,
-        templateId: 46696,
+        templateId: 69515,
         templateArgs: {
             img1: imgUrl1,
             img2: imgUrl2,

@@ -362,3 +362,4 @@ CrossTable(x=df$Level, y=df$Pass, chisq = TRUE)
 
 
 # 결론 P값이 0.05 보다 크므로 실험 결과가 단순한 우연일 수도 있다는 뜻이고 귀무 가설이 참일 가능성이 높은 데이터입니다.
+

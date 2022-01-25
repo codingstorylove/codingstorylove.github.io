@@ -91,7 +91,7 @@
     .right-widget__component-title {
       font-weight: bold;
       font-size: 1.4em;
-      color: white;
+      color: rgb(17, 0, 0);
       margin: 8px 0 4px 0;
     }
     .right-widget__component-type1 {
@@ -101,9 +101,9 @@
     .right-widget__toc {
       font-weight: lighter;
       a {
-        color: white;
+        color: rgb(20, 1, 1);
         &:visited {
-          color: white;
+          color: rgb(20, 1, 1);
         }
         &:hover {
           text-decoration: underline;

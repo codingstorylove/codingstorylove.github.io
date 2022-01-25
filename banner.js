@@ -24,7 +24,7 @@ if (script.slice(0, 3) != "/*!") {
   fs.writeFileSync(filename, banner + script);
 }
 
-/* customs js */
+/* customs js */  
 var filename = "assets/js/customs.min.js";
 var script = fs.readFileSync(filename);
 if (script.slice(0, 3) != "/*!") {

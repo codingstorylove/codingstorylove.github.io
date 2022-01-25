@@ -30,9 +30,9 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "facebook" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "codingstorylove" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -300,7 +300,7 @@ defaults:
       author_profile: true
       show_date: true
       show_header-meta: true
-      read_time: false
+      read_time: true
       comments: true
       share: true
       related: true
@@ -319,7 +319,7 @@ defaults:
     values:
       title_align-center: true
       classes: wide
-      toc: false
+      toc: true
       use_kakao-sdk: true
 
 
@@ -340,4 +340,4 @@ raw_github_url_prefix: ""
 languages: ['ja', 'ko', 'en']
 default_lang: 'ko'
 exclude_from_localization: ['javascript', 'images', 'css']
-parallel_localization: false
+parallel_localization: true

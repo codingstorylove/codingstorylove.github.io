@@ -74,9 +74,9 @@ $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: #000 !default;
 $muted-text-color: $text-color !default;
-$border-color: mix(#fff, $text-color, 75%) !default;
+$border-color: mix(rgba(67, 146, 196, 0.959), $text-color, 100%) !default;
 $form-background-color: $lighter-gray !default;
-$footer-background-color: #000 !default;
+$footer-background-color: rgba(135, 175, 199, 0.959) !default;
 
 $primary-color: #ff0000 !default;
 $success-color: #3fa63f !default;
@@ -163,11 +163,11 @@ $max-width: $x-large !default;
    ========================================================================== */
 
    // sidebar
-$left-sidebar-scroll-width: 16px;
+$left-sidebar-scroll-width: 10px;
 $left-sidebar-meta-font-size: 13px;
-$left-sidebar-width: 216px;  // left sidebar width + scroll bar space
-$left-sidebar-font-size: 14px;
-$left-sidebar-item-font-size: 14px;
+$left-sidebar-width: 200px;  // left sidebar width + scroll bar space
+$left-sidebar-font-size: 17px;
+$left-sidebar-item-font-size: 17px;
 $right-sidebar-width: 200px;
 $right-sidebar-width-narrow: 200px !default;
 $author-bio-font-size: 12px;
@@ -222,7 +222,7 @@ $right-widget__btn-border-color: $border-color;
 $right-widget__btn-arrow-height: 20px;  // 7px;
 $right-widget__btn-arrow-width: 20px;  // 50px;
 $right-widget__btn-arrow-color: $primary-color;
-$right-widget__body-backgroundcolor: rgba(0, 0, 0, .9); // mix(black, #fff, 85%);
+$right-widget__body-backgroundcolor: rgba(251, 255, 255, 0.9); // mix(black, #fff, 85%);
 
 // initial-content
 $initial-content-top: calc(#{$masthead-height} + 8px);

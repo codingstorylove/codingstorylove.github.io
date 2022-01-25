@@ -6,12 +6,12 @@ main:
     url: /about/#page-title
   - title: "목차"
     url: /toc/#wholetoc__title
-  - title: "Dropdown-Sample"
+  - title: ""
     dropdown:
-    - title: "Sub"
+    - title: "첫페이지로 돌아가기"
       url: "#"
-    - title: "SubMenu"
-      url: "#"
+    # - title: "SubMenu"
+    #   url: "#"
 
 # main sidebar links
 # 1개 원소는 title, url, children으로 구성
@@ -32,6 +32,6 @@ main-sidebar:
       url: "/blog/tips3/"
   - title: "추천시스템"
     url: "/front-end/"
-  - title: "통계학&빅데이터&인공지능"
-    url: "/mathematics/"
+  - title: "빅데이터&인공지능"
+    url: "/bigdataai/"
 
