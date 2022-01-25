@@ -1,0 +1,27 @@
+---
+layout: single
+poem-date: ""
+poem-author: "Seongjae Yu"
+---
+{% if page.author_note_top %}
+<div class="poem-author-note-top">
+  <span>들어가며:</span><br/>
+  {{ page.author_note_top }}
+</div>
+{% endif %}
+<div class="poem-wrapper">
+<div class="poem">
+<div class="poem-title">{{ page.title }}</div>
+<div class="poem-author">
+<div class="poem-date">{{ page.poem-date | default: "now" | date: "%Y-%m-%d" }}</div>
+{{ page.poem-author | default: layout.poem-author }}</div>
+<div class="poem-body" markdown="0">
+{{ content | strip | remove: "<p>" | remove: "</p>"}}
+</div>
+</div>
+</div>
+{% if page.author_note_bottom %}
+<div class="poem-author-note-bottom">
+  <span>마치며:</span><br/>
+  {{ page.author_note_bottom }}
+{% endif %}

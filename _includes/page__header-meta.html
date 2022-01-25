@@ -1,0 +1,20 @@
+{% assign document = include.target | default: page %}
+
+{% if document.show_header-meta %}
+<div class="page__header-meta">
+  {% if document.date %}
+  {% assign date = document.date %}
+  <span class="page__header-meta-date">
+    <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+    <strong>{{ site.data.ui-text[site.locale].date_label | default: "Uploaded:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ document.date | date: "%Y-%m-%d %H:%M:%S %z" }}</time>
+  </span>
+  {% endif %}
+  {% if document.last_modified_at %}
+  <br/>
+  <span class="page__header-meta-date">
+    <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+    <strong>{{ site.data.ui-text[site.locale].modified_date_label | default: "Modified:" }}</strong> <time datetime="{{ document.last_modified_at | date_to_xmlschema }}">{{ document.last_modified_at | date: "%Y-%m-%d %H:%M:%S %z" }}</time>
+  </span>
+  {% endif %}
+</div>
+{% endif %}

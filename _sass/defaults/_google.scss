@@ -1,0 +1,36 @@
+.gsc-input-box {
+  table {
+    margin-bottom: 0;
+  }
+}
+.gsc-input {
+  input {
+    box-shadow: none;
+    &:focus {
+      box-shadow: none;
+    }
+    overflow-y: hidden;
+  }
+}
+
+.adsbygoogle {
+  & + script {
+    display: none;
+    & + p {
+      margin-top: 1em;
+    }
+  }
+}
+
+.sidebar__right.sticky {
+  max-height: none;
+}
+
+#site-paginator__ad-boxes {
+  margin-top: 2em;
+  display: table;
+  td.ad-box {
+    border: 0;
+    text-align: center;
+  }
+}
