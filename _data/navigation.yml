@@ -27,7 +27,7 @@ main-sidebar:
     - title: "NLP Algorithm"
       url: "/algorithm/nlp/"
     - title: "Classification Algorithm"
-      url: "/algorithm/Classification/"
+      url: "/algorithm/classification/"
     - title: "Process Mining Algorithm"
       url: "/algorithm/processmining/"
   - title: "추천시스템"
