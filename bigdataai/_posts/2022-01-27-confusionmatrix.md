@@ -2,7 +2,7 @@
 layout: single
 title: "오차행렬로 모델 평가"
 date: "2022-01-27 16:20:00 +0900"
-last_modified_at: "2022-01-27 17:20:10 +0900"
+last_modified_at: "2022-01-27 18:36:15 +0900"
 ---
 
 # 오차행렬로 모델 평가
@@ -149,22 +149,6 @@ library(caret)
 
 
 ```R
-install.packages('lattice')
-```
-
-    
-      There is a binary version available but the source version is later:
-             binary  source needs_compilation
-    lattice 0.20-44 0.20-45              TRUE
-    
-      Binaries will be installed
-    
-
-    Warning message:
-    "package 'lattice' is in use and will not be installed"
-
-
-```R
 set.seed(42)
 # vote를 종속변수로 두기 (투표를 했는지 안했는지 예측)
 training.samples <- createDataPartition(data$vote, p = 0.7, list = FALSE)
@@ -251,7 +235,6 @@ test <- data[-training.samples, ]
 
 ```R
 finalControl <- trainControl(method = "none", classProbs = TRUE)
-set.seed(42)
 FinalModel <- train(vote ~ ., data = train, 
                     method = "knn", 
                     trControl = finalControl, 
@@ -283,7 +266,7 @@ train_pred<-predict(FinalModel, train)
 ```R
 # 오차행렬 적용
 confusionMatrix(data = train_pred, reference = train$vote)
-# 정확도 ->  Accuracy : 0.7635 
+# 정확도 ->  Accuracy : 0.75             
 ```
 
 
@@ -291,26 +274,26 @@ confusionMatrix(data = train_pred, reference = train$vote)
     
               Reference
     Prediction no yes
-           no  18  10
-           yes 25  95
+           no  19  13
+           yes 24  92
                                               
-                   Accuracy : 0.7635          
-                     95% CI : (0.6868, 0.8294)
+                   Accuracy : 0.75            
+                     95% CI : (0.6722, 0.8175)
         No Information Rate : 0.7095          
-        P-Value [Acc > NIR] : 0.08533         
+        P-Value [Acc > NIR] : 0.1597          
                                               
-                      Kappa : 0.3605          
+                      Kappa : 0.344           
                                               
-     Mcnemar's Test P-Value : 0.01796         
+     Mcnemar's Test P-Value : 0.1002          
                                               
-                Sensitivity : 0.4186          
-                Specificity : 0.9048          
-             Pos Pred Value : 0.6429          
-             Neg Pred Value : 0.7917          
+                Sensitivity : 0.4419          
+                Specificity : 0.8762          
+             Pos Pred Value : 0.5937          
+             Neg Pred Value : 0.7931          
                  Prevalence : 0.2905          
-             Detection Rate : 0.1216          
-       Detection Prevalence : 0.1892          
-          Balanced Accuracy : 0.6617          
+             Detection Rate : 0.1284          
+       Detection Prevalence : 0.2162          
+          Balanced Accuracy : 0.6590          
                                               
            'Positive' Class : no              
                                               
@@ -320,8 +303,7 @@ confusionMatrix(data = train_pred, reference = train$vote)
 ```R
 confusionMatrix(data = train_pred, reference = train$vote, mode = "prec_recall")
 # mode = "prec_recall" 설정하면 precision,recall 조회됨
-# Precision : 0.6429          
-# Recall : 0.4186 
+
 ```
 
 
@@ -329,25 +311,25 @@ confusionMatrix(data = train_pred, reference = train$vote, mode = "prec_recall")
     
               Reference
     Prediction no yes
-           no  18  10
-           yes 25  95
+           no  19  13
+           yes 24  92
                                               
-                   Accuracy : 0.7635          
-                     95% CI : (0.6868, 0.8294)
+                   Accuracy : 0.75            
+                     95% CI : (0.6722, 0.8175)
         No Information Rate : 0.7095          
-        P-Value [Acc > NIR] : 0.08533         
+        P-Value [Acc > NIR] : 0.1597          
                                               
-                      Kappa : 0.3605          
+                      Kappa : 0.344           
                                               
-     Mcnemar's Test P-Value : 0.01796         
+     Mcnemar's Test P-Value : 0.1002          
                                               
-                  Precision : 0.6429          
-                     Recall : 0.4186          
-                         F1 : 0.5070          
+                  Precision : 0.5938          
+                     Recall : 0.4419          
+                         F1 : 0.5067          
                  Prevalence : 0.2905          
-             Detection Rate : 0.1216          
-       Detection Prevalence : 0.1892          
-          Balanced Accuracy : 0.6617          
+             Detection Rate : 0.1284          
+       Detection Prevalence : 0.2162          
+          Balanced Accuracy : 0.6590          
                                               
            'Positive' Class : no              
                                               
@@ -362,13 +344,16 @@ postResample(pred = train_pred, obs = train$vote)
 
 Accuracy
 
-0.763513513513513
+0.75
 
 Kappa
 
-0.360493827160494
+0.344034499281265
 
 ```
+
+
+
 
 
 ### 테스트 모델의 예측 Class 측정
@@ -390,26 +375,26 @@ confusionMatrix(data = test_pred, reference = test$vote)
     
               Reference
     Prediction no yes
-           no   3  10
-           yes 15  35
+           no   3   8
+           yes 15  37
                                              
-                   Accuracy : 0.6032         
-                     95% CI : (0.472, 0.7243)
+                   Accuracy : 0.6349         
+                     95% CI : (0.504, 0.7527)
         No Information Rate : 0.7143         
-        P-Value [Acc > NIR] : 0.9793         
+        P-Value [Acc > NIR] : 0.9347         
                                              
-                      Kappa : -0.0606        
+                      Kappa : -0.0126        
                                              
-     Mcnemar's Test P-Value : 0.4237         
+     Mcnemar's Test P-Value : 0.2109         
                                              
                 Sensitivity : 0.16667        
-                Specificity : 0.77778        
-             Pos Pred Value : 0.23077        
-             Neg Pred Value : 0.70000        
+                Specificity : 0.82222        
+             Pos Pred Value : 0.27273        
+             Neg Pred Value : 0.71154        
                  Prevalence : 0.28571        
              Detection Rate : 0.04762        
-       Detection Prevalence : 0.20635        
-          Balanced Accuracy : 0.47222        
+       Detection Prevalence : 0.17460        
+          Balanced Accuracy : 0.49444        
                                              
            'Positive' Class : no             
                                              
@@ -426,25 +411,25 @@ confusionMatrix(data = test_pred, reference = test$vote, mode = "prec_recall")
     
               Reference
     Prediction no yes
-           no   3  10
-           yes 15  35
+           no   3   8
+           yes 15  37
                                              
-                   Accuracy : 0.6032         
-                     95% CI : (0.472, 0.7243)
+                   Accuracy : 0.6349         
+                     95% CI : (0.504, 0.7527)
         No Information Rate : 0.7143         
-        P-Value [Acc > NIR] : 0.9793         
+        P-Value [Acc > NIR] : 0.9347         
                                              
-                      Kappa : -0.0606        
+                      Kappa : -0.0126        
                                              
-     Mcnemar's Test P-Value : 0.4237         
+     Mcnemar's Test P-Value : 0.2109         
                                              
-                  Precision : 0.23077        
+                  Precision : 0.27273        
                      Recall : 0.16667        
-                         F1 : 0.19355        
+                         F1 : 0.20690        
                  Prevalence : 0.28571        
              Detection Rate : 0.04762        
-       Detection Prevalence : 0.20635        
-          Balanced Accuracy : 0.47222        
+       Detection Prevalence : 0.17460        
+          Balanced Accuracy : 0.49444        
                                              
            'Positive' Class : no             
                                              
@@ -459,12 +444,15 @@ postResample(pred = test_pred, obs = test$vote)
 
 Accuracy
 
-0.603174603174603
+0.634920634920635
 
 Kappa
 
--0.0606060606060608
+-0.0125786163522012
 
 ```
+
+
+
 
 
