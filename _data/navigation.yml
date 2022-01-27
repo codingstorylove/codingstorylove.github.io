@@ -34,4 +34,5 @@ main-sidebar:
     url: "/front-end/"
   - title: "빅데이터&인공지능"
     url: "/bigdataai/"
-
+  - title: "streamlit"
+    url: "/streamlit/"
