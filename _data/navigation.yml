@@ -22,14 +22,14 @@ main:
 # 1. CSS 적용 문제로 children 깊이는 2까지만 하는것을 권장. 즉, children의 children까지만.
 main-sidebar:
   - title: "알고리즘"
-    url: "/blog/"
+    url: "/algorithm/"
     children:
     - title: "NLP Algorithm"
-      url: "/blog/tips/"
+      url: "/algorithm/nlp/"
     - title: "Classification Algorithm"
-      url: "/blog/tips2/"
+      url: "/algorithm/Classification/"
     - title: "Process Mining Algorithm"
-      url: "/blog/tips3/"
+      url: "/algorithm/processmining/"
   - title: "추천시스템"
     url: "/front-end/"
   - title: "빅데이터&인공지능"
