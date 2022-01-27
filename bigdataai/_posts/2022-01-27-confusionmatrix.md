@@ -358,14 +358,17 @@ confusionMatrix(data = train_pred, reference = train$vote, mode = "prec_recall")
 postResample(pred = train_pred, obs = train$vote)
 ```
 
+```R
 
-<dl class=dl-horizontal>
-	<dt>Accuracy</dt>
-		<dd>0.763513513513513</dd>
-	<dt>Kappa</dt>
-		<dd>0.360493827160494</dd>
-</dl>
+Accuracy
 
+0.763513513513513
+
+Kappa
+
+0.360493827160494
+
+```
 
 
 ### 테스트 모델의 예측 Class 측정
@@ -452,12 +455,16 @@ confusionMatrix(data = test_pred, reference = test$vote, mode = "prec_recall")
 postResample(pred = test_pred, obs = test$vote)
 ```
 
+```R
 
-<dl class=dl-horizontal>
-	<dt>Accuracy</dt>
-		<dd>0.603174603174603</dd>
-	<dt>Kappa</dt>
-		<dd>-0.0606060606060608</dd>
-</dl>
+Accuracy
+
+0.603174603174603
+
+Kappa
+
+-0.0606060606060608
+
+```
 
 
