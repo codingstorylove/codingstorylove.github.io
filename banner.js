@@ -9,7 +9,7 @@ var date = `${dateObj.getFullYear()}-${padStart(
   dateObj.getMonth() + 1
 )}-${padStart(dateObj.getDate())}`;
 var customBanner =
-` * Customized Jekyll Theme by Sammy Baek
+` * Customized Jekyll Theme by SeongJae Yu
  * Copyright 2021-${dateObj.getFullYear()} ${authorName}. All rights reserved.`;
 var banner = `/*!
 ${customBanner}
