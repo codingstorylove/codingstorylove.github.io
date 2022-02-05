@@ -37,10 +37,10 @@ main-sidebar:
   - title: "streamlit"
     url: "/streamlit/"
   - title: "Django-project"
-    url: "/django-project/"
+    url: "/djangoproject/"
     children:
     - title: "Inventory-System-Web"
-      url: "/django-project/django-inventory-system-web/"
+      url: "/django-project/djangoinventorysystemweb/"
 
 
 
