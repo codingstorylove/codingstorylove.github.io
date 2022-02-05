@@ -36,11 +36,11 @@ main-sidebar:
     url: "/bigdataai/"
   - title: "streamlit"
     url: "/streamlit/"
-  - title: "Django-project"
-    url: "/djangoproject/"
+  - title: "Django Project"
+    url: "/django/"
     children:
-    - title: "Inventory-System-Web"
-      url: "/django-project/djangoinventorysystemweb/"
+    - title: "Inventory System Web"
+      url: "/django/inventoryweb/"
 
 
 
