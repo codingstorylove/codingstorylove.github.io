@@ -19,7 +19,7 @@ locale                   : "ko-KR"
 title                    : "codingstorylove"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "SeongJae Yu"
+name                     : "SeongJae Yoo"
 description              : "AI and BigData story"
 url                      : "https://codingstorylove.github.io" # the base hostname & protocol for your site e.g. "https://codingstorylove.github.io"
 baseurl                  :  #
@@ -94,13 +94,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "SeongJae Yu"
+  name             : "SeongJae Yoo"
   name-link        : "https://codingstudylove.github.io/about/"
   avatar           : "/assets/images/2020-08-28-18-37-15-269.jpg"  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   avatar-link      : "https://codingstudylove.github.io/about/"
   # avatar           : "/assets/images/christmas2020/my_face.jpg"  # for 2020 X-mas Theme
   # avatar: "/assets/images/happy_new_year_2021/my_face.jpg"  # for 2021 Happy New Year
-  bio              : "codingstudylove"
+  bio              : "codingstorylove & Ai & BigData & Python"
   location         : "Seoul, Rep. of Korea"
   email            : "yousong4243@naver.com"
   links:
@@ -109,10 +109,10 @@ author:
       # url: "yousong4243@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://seongjae-yoo.github.io/"
+      url: "https://seongjae-yoo.github.io/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://seongjae-yoo.github.io/"
+      url: "https://seongjae-yoo.github.io/"
     - label: ""
       icon: "fab fa-fw fa-facebook-square"
       url: ""

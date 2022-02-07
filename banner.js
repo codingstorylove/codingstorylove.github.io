@@ -1,4 +1,4 @@
-var authorName = "SeongJae Yu";
+var authorName = "SeongJae Yoo";
 var fs = require("fs");
 var pkg = require("./package.json");
 var filename = "assets/js/main.min.js";
@@ -9,7 +9,7 @@ var date = `${dateObj.getFullYear()}-${padStart(
   dateObj.getMonth() + 1
 )}-${padStart(dateObj.getDate())}`;
 var customBanner =
-` * Customized Jekyll Theme by SeongJae Yu
+` * Customized Jekyll Theme by SeongJae Yoo
  * Copyright 2021-${dateObj.getFullYear()} ${authorName}. All rights reserved.`;
 var banner = `/*!
 ${customBanner}
