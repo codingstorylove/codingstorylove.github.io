@@ -53,6 +53,7 @@ atom_feed:
   path                   : 
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
+
 search_provider          : algolia # lunr (default), algolia, google
 algolia:
   application_id         : NKF0ERK7QF # YOUR_APPLICATION_ID
@@ -60,14 +61,15 @@ algolia:
   search_only_api_key    : 7b87a343a79532c1590398cdabf7f599 # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : true # true (default), false
   extensions_to_index:
-    - html
-    - md
-    - adoc
-    - textile
-    - python
-    - css 
-    - kramdown
-    - Jupyter-Notebook
+    -html
+    -md
+    -adoc
+    -textile
+    -python
+    -css 
+    -kramdown
+    -Jupyter-Notebook
+    
 google:
   search_engine_id       :  46b92f25793809635
   instant_search         :  true

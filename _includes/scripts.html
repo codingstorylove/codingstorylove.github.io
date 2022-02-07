@@ -7,7 +7,7 @@
 {% endif %}
 
 {% if site.search == true or page.layout == "search" %}
-  {%- assign search_provider = site.search_provider | default: "lunr" -%}
+  {%- assign search_provider = site.search_provider | default: "algolia" -%}
   {%- case search_provider -%}
     {%- when "lunr" -%}
       {% include_cached search/lunr-search-scripts.html %}
