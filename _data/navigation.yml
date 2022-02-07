@@ -39,8 +39,8 @@ main-sidebar:
   - title: "Django Project"
     url: "/django/"
     children:
-    - title: "Inventory System Web"
-      url: "/django/inventoryweb/"
+    - title: "Django Inventory System Web"
+      url: "/django/django-inventory-system-web/"
 
 
 
