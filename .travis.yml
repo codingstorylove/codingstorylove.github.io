@@ -12,7 +12,7 @@ deploy:
   github_token: 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
   keep_history: true
   local-dir: ./_site
-  target-branch: master
+  target-branch: main
   on:
     branch: sources
 
