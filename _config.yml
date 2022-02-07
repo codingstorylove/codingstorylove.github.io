@@ -51,8 +51,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : 
-search                   : false # true, false (default)
-search_full_content      : false # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : lunr # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -80,7 +80,7 @@ og_image                 : # Open Graph/Twitter default site image
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  name                   : SeongJae Yoo # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # Analytics
@@ -106,7 +106,7 @@ author:
   links:
     - label: ""
       icon: "fas fa-fw fa-envelope-square"
-      # url: "yousong4243@naver.com"
+      url: "yousong4243@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://seongjae-yoo.github.io/"
