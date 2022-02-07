@@ -1,11 +1,10 @@
 # codingstorylove
 
 [Minimal Mistakes 테마](https://github.com/mmistakes/minimal-mistakes)를 이용한 Github Page.<br/>
-이 Blog는 Minimal Mistakes의 commit [d6444412](https://github.com/mmistakes/minimal-mistakes/commit/d6444412c63aea5e47241ef536509fb1bfef4830)으로부터 시작하여 개발되었음.<br/>
-주로 파이썬으로 알고리즘을 다룰예정입니다.
+이 Blog는 Minimal Mistakes으로부터 시작하여 개발되었습니다.<br/>
 
 Github Page using [Minimal Mistakes Theme](https://github.com/mmistakes/minimal-mistakes).<br/>
-This blog is being developed from Minimal Mistakes commit [d6444412](https://github.com/mmistakes/minimal-mistakes/commit/d6444412c63aea5e47241ef536509fb1bfef4830).<br/>
+This blog is being developed from Minimal Mistakes <br/>
 
 ---
 search (돋보기 이미지) 기능에 Jekyll Algolia Plugin 적용하였습니다.
@@ -28,6 +27,6 @@ algolia:
 4. ALGOLIA_API_KEY='your_admin_api_key' bundle exec jekyll algolia 터미널에 입력 후 실행 시켰줍니다.
 
 
-![20220208_032719_1]({{ site.gdrive_url_prefix }}1Tbv6OGc7QI0wfqAsPjFFn29LCodV_KA8)
+![20220208_032719_1](./assets/images/20220208_032719_1.png)
 
 ### Blog URL: [codingstorylove.github.io](https://codingstorylove.github.io/)
