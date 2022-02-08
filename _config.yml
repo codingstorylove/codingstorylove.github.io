@@ -54,7 +54,8 @@ atom_feed:
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 
-search_provider          : algolia # lunr (default), algolia, google
+search_provider          : lunr # lunr (default), algolia, google
+
 algolia:
   application_id         : NKF0ERK7QF # YOUR_APPLICATION_ID
   index_name             : codingstorylove.github.io # YOUR_INDEX_NAME
@@ -117,7 +118,7 @@ author:
   links:
     - label: ""
       icon: "fas fa-fw fa-envelope-square"
-      url: "yousong4243@naver.com"
+     # url: "yousong4243@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://seongjae-yoo.github.io/"
@@ -179,7 +180,7 @@ exclude:
   - Capfile
   - CHANGELOG
   - config
-  - Gemfile
+ # - Gemfile
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
@@ -226,11 +227,11 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
+ 
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -242,6 +243,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  
  # - jekyll-seo-tag
  # - jekyll-polyglot
 # mimic GitHub Pages with --safe
@@ -344,7 +346,7 @@ footer_scripts:
 
 ## Global Variables
 gdrive_url_prefix: "https://drive.google.com/uc?export=view&id="
-raw_github_url_prefix: ""
+raw_github_url_prefix: "https://seongjae-yoo.github.io/"
 
 
 #polyglot 플러그인 글로벌 설정
