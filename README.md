@@ -29,4 +29,6 @@ algolia:
 
 ![20220208_032719_1](./assets/images/20220208_032719_1.png)
 
+# algolia 검색 엔진은 lunr보다 검색 속도가 빠르나 markdown ```python ``` 코딩소스가 검색이 되지 않아 lunr 검색엔진으로 다시 바꾸었습니다.
+
 ### Blog URL: [codingstorylove.github.io](https://codingstorylove.github.io/)
