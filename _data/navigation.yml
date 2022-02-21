@@ -41,6 +41,7 @@ main-sidebar:
     children:
     - title: "Django Inventory System Web"
       url: "/django/django-inventory-system-web/"
-
+  - title: "awsforecast"
+    url: "/awsforecast/"
 
 
