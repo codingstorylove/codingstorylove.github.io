@@ -299,7 +299,7 @@ Amazon SageMaker 디버거 및 프로파일링 기능을 통해 딥 러닝 과�
     
 현대자동차, Amazon SageMaker 기반 자율 주행 기계 학습 모델의 학습 시간 단축 사례
 
-> segemaker 도입효과 
+> SageMaker 도입효과 
 
 
 - 글 출처 : SageMaker을 활용한 인공지능 서비스 자동화 사례 (나재원, 마이셀럽 CTO) :: AWS TechShift 2018
