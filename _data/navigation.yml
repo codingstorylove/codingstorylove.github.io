@@ -46,5 +46,8 @@ main-sidebar:
     children:
     - title: "재고예측 및 수요예측 논문"
       url: "/awsforecast/thesis/"
+      title: "AWS forecast 주피터노트북 코딩 프로젝트"
+      url: "/awsforecast/coding/"
+      
 
 
