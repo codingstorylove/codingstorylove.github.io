@@ -31,4 +31,6 @@ algolia:
 
 # algolia 검색 엔진은 lunr보다 검색 속도가 빠르나 markdown ```python ``` 코딩소스가 검색이 되지 않아 lunr 검색엔진으로 다시 바꾸었습니다.
 
+## 저장용량 문제로 인해 사진은 깃허브에 올리지 않고 구글 드라이브를 사용해서 링크를 통해 연동해서 사진이 보이게 설정했습니다. 
+
 ### Blog URL: [codingstorylove.github.io](https://codingstorylove.github.io/)
