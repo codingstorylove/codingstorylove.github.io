@@ -435,13 +435,7 @@ from IPython.display import Image  # 주피터 노트북에 이미지 삽입
 Image("C://Users/MyCom/jupyter-tutorial/AWS/data/20220302_171811_7.png") 
 ```
 
-
-
-
-![output_40_0]({{ site.gdrive_url_prefix }}1smgwALgsIuax_NzlZa2tpjMY0LwJFFQ_)
-
-    
-
+![output_40_0]({{ site.gdrive_url_prefix }}1XNtuMe8G0yoOXrJsDrw5Dot4Z_Vm66qk)
 
 
 
