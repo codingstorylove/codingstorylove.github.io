@@ -48,6 +48,11 @@ main-sidebar:
       url: "/awsforecast/thesis/"
     - title: "Amazon SageMaker 코딩 프로젝트"
       url: "/awsforecast/coding/"
+  - title: "대학원 수업 자료"
+    url: "/classdataset/"
+    children:
+    - title: "빅데이터 수업"
+      url: "/classdataset/bigdataclass/"
       
 
 
