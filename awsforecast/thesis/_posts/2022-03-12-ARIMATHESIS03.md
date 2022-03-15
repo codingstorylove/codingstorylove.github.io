@@ -85,7 +85,7 @@ Image("C://Users/MyCom/jupyter-tutorial/AWS/data/20220312_182622_1.png")
 다음으로 모형에 대하여 식별은 두 개의 이론적 상관함수인 자기상관함수(auto correlation function, ACF)와 편자기상관함수(partial auto
 correlation function, PACF)를 이용하여 추정된 ACF와 PACF가 두 개의 이론적 상관함수와 각각 일치하는지를 비교하게 된다. 
 
-이 단계는 관측값들 사이에 존재하는 상관관계를 측정하여 ARIMA (p,d,q) 모형을 구성하는 자기회귀(AR) 요소인 p와 이동평균(MA) 요소인 p를 선택하는 단계로, ACF와 PACF의 형태에 따라 모형을 식별하게 된다.
+이 단계는 관측값들 사이에 존재하는 상관관계를 측정하여 ARIMA (p,d,q) 모형을 구성하는 자기회귀(AR) 요소인 p와 이동평균(MA) 요소인 q를 선택하는 단계로, ACF와 PACF의 형태에 따라 모형을 식별하게 된다.
 
 그리고 추정단계의 경우 앞서 고려한 모형의 계수를 추정하고, 모수가 통계적으로 유의한지를 판단하게 된다. 
 
