@@ -53,6 +53,8 @@ main-sidebar:
     children:
     - title: "빅데이터 수업"
       url: "/classdataset/bigdataclass/"
+    - title: "데이터마이닝의 이론과 실제 "
+      url: "/classdataset/datamining/"  
       
 
 
