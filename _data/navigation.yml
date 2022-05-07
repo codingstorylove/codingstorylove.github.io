@@ -55,6 +55,8 @@ main-sidebar:
       url: "/classdataset/bigdataclass/"
     - title: "데이터마이닝의 이론과 실제 "
       url: "/classdataset/datamining/"  
+    - title: "머신러닝 수업 "
+      url: "/classdataset/machinelearning/"  
       
 
 
