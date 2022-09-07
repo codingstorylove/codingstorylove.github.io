@@ -57,5 +57,8 @@ main-sidebar:
       url: "/classdataset/datamining/"  
     - title: "머신러닝 수업 "
       url: "/classdataset/machinelearning/"        
-   - title: "AI-InvestmentBot Project"
-    url: "/AI-InvestmentBot Project/"  
+  - title: "AI-investmentBot"
+    url: "/ai-investmentbot/"  
+    children:
+    - title: "프로젝트 기록공간"
+      url: "/ai-investmentbot/project/"
