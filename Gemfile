@@ -13,7 +13,7 @@ source "https://rubygems.org"
 
 # To upgrade, run `bundle update`.
 
-gem "jekyll"
+gem "jekyll", "4.2.1"
 gem "minimal-mistakes-jekyll"
 gem 'wdm', '>= 0.1.0'
 # The following plugins are automatically loaded by the theme-gem:
